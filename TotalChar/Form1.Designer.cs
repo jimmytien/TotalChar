@@ -31,12 +31,12 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.infoTotalChar = new System.Windows.Forms.ToolStripStatusLabel();
+            this.ProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.bWorker1 = new System.ComponentModel.BackgroundWorker();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -64,7 +64,7 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.infoTotalChar,
-            this.toolStripProgressBar1});
+            this.ProgressBar1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 443);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(434, 22);
@@ -78,6 +78,11 @@
             this.infoTotalChar.Size = new System.Drawing.Size(150, 17);
             this.infoTotalChar.Text = "總字數 :";
             this.infoTotalChar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // ProgressBar1
+            // 
+            this.ProgressBar1.Name = "ProgressBar1";
+            this.ProgressBar1.Size = new System.Drawing.Size(100, 16);
             // 
             // splitContainer1
             // 
@@ -138,15 +143,13 @@
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
-            // toolStripProgressBar1
-            // 
-            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
-            // 
             // bWorker1
             // 
             this.bWorker1.WorkerReportsProgress = true;
             this.bWorker1.WorkerSupportsCancellation = true;
+            this.bWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bWorker1_DoWork);
+            this.bWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.bWorker1_ProgressChanged);
+            this.bWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bWorker1_RunWorkerCompleted);
             // 
             // Form1
             // 
@@ -182,7 +185,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
+        private System.Windows.Forms.ToolStripProgressBar ProgressBar1;
         private System.ComponentModel.BackgroundWorker bWorker1;
     }
 }

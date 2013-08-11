@@ -14,29 +14,77 @@ namespace TotalChar
     public partial class Form1 : Form
     {
         private System.Collections.Hashtable htable = new System.Collections.Hashtable();
-        
+        private Encoding inCode = null;
 
-        private void fiFileChar(string fname)
+        public Form1()
         {
-            StreamReader inFile = File.OpenText(fname);
-            int linecnt = 0;
-            string outline;
-            while( !inFile.EndOfStream )
-            {
-                string line = inFile.ReadLine();
-                char[] chars = line.ToCharArray();
-                foreach (char c in chars)
-                {
-                    if (!htable.ContainsKey(c))
-                    {
-                        htable[c] = c;
-                        richTextBox1.AppendText(c.ToString());
-                    }
-                }
-            }
-            inFile.Close();
+            InitializeComponent();
         }
 
+        private void textBox1_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop, false) == true)
+            {
+                e.Effect = DragDropEffects.All;
+            }
+        }
+
+        private void textBox1_DragDrop(object sender, DragEventArgs e)
+        {
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+
+            foreach (string file in files)
+            {
+                textBox1.Text = file;
+                break;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            bWorker1.RunWorkerAsync();
+            /*
+            foreach(object listitem in listBox2.Items )
+            {
+                string filename = listitem.ToString();
+                filteFile(filename);
+            }
+            outputResult(textBox1.Text);
+            */
+        }
+
+        private void listBox2_DragDrop(object sender, DragEventArgs e)
+        {
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+
+            foreach (string file in files)
+            {
+                listBox2.Items.Add(file);
+            }
+
+        }
+
+        private void listBox2_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop, false) == true)
+            {
+                e.Effect = DragDropEffects.All;
+            }
+        }
+
+        private string convString(string instr, Encoding inCode, Encoding outCode)
+        {
+            byte[] inBytes = inCode.GetBytes(instr);
+            byte[] outBytes = Encoding.Convert(inCode, outCode, inBytes);
+            char[] outChars = new char[outCode.GetCharCount(outBytes, 0, outBytes.Length)];
+            outCode.GetChars(outBytes, 0, outBytes.Length, outChars, 0);
+            return new string(outChars);
+        }
+        /*
+        private void filteFile(string fname) 
+        {
+        }
+        */
         private void outputResult(string fname)
         {
             StreamWriter outFile = new StreamWriter( fname, false, Encoding.Unicode );
@@ -56,63 +104,91 @@ namespace TotalChar
             outFile.Close();
         }
 
-        public Form1()
+        private void filteFile(string fname)
         {
-            InitializeComponent();
-        }
+            StreamReader inFile = File.OpenText(fname);
+            Encoding unicode = Encoding.Unicode;
+            int TotalCharCount = 0;
+            int linecnt = 0;
+            string outline;
+            while ( !inFile.EndOfStream )
+            {
+                string line = inFile.ReadLine();
+                byte[] inBytes = inCode.GetBytes(line);
+                byte[] outBytes = Encoding.Convert(inCode, unicode, inBytes);
+                char[] outChars = new char[unicode.GetCharCount(outBytes, 0, outBytes.Length)];
+                unicode.GetChars(outBytes, 0, outBytes.Length, outChars, 0);
 
-        private void listBox2_DragDrop(object sender, DragEventArgs e)
-        {
-            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
-
-               foreach (string file in files)
+                foreach (char c in outChars)
                 {
-                    listBox2.Items.Add(file);
+                    if (!htable.ContainsKey(c))
+                    {
+                        htable[c] = c;
+                        richTextBox1.AppendText(c.ToString());
+                    }
                 }
- 
-        }
-
-        private void listBox2_DragEnter(object sender, DragEventArgs e)
-        {
-            // 確定使用者抓進來的是檔案
-            if (e.Data.GetDataPresent(DataFormats.FileDrop, false) == true)
-            {
-                // 允許拖拉動作繼續 (這時滑鼠游標應該會顯示 +)
-                e.Effect = DragDropEffects.All;
             }
+            inFile.Close();
         }
 
-        private void textBox1_DragEnter(object sender, DragEventArgs e)
+        private void showTotalChar(int cnt)
         {
-            // 確定使用者抓進來的是檔案
-            if (e.Data.GetDataPresent(DataFormats.FileDrop, false) == true)
-            {
-                // 允許拖拉動作繼續 (這時滑鼠游標應該會顯示 +)
-                e.Effect = DragDropEffects.All;
-            }
+            infoTotalChar.Text = "總字數 : " + cnt.ToString();
         }
 
-        private void textBox1_DragDrop(object sender, DragEventArgs e)
+        private void setProgressBar(int progress)
         {
-            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
-
-            foreach (string file in files)
-            {
-                textBox1.Text = file;
-                break;
-            }
+            ProgressBar1.Value = 0;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void bWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
-            FileStream fsInfile;
-            foreach(object listitem in listBox2.Items )
+            BackgroundWorker worker = sender as BackgroundWorker;
+            int TotalCharCount = 0;
+            foreach (object listitem in listBox2.Items)
             {
                 string filename = listitem.ToString();
-                fiFileChar(filename);
+                StreamReader inFile = File.OpenText(filename);
+                inCode = inFile.CurrentEncoding;
+                long inFileLength = inFile.BaseStream.Length;
+                Encoding unicode = Encoding.Unicode;
+                int linecnt = 0;
+                string outline;
+//                setProgressBar(0);
+                while (!inFile.EndOfStream)
+                {
+                    string line = inFile.ReadLine();
+                    byte[] inBytes = inCode.GetBytes(line);
+                    byte[] outBytes = Encoding.Convert(inCode, unicode, inBytes);
+                    char[] outChars = new char[unicode.GetCharCount(outBytes, 0, outBytes.Length)];
+                    unicode.GetChars(outBytes, 0, outBytes.Length, outChars, 0);
+
+                    foreach (char c in outChars)
+                    {
+                        if (!htable.ContainsKey(c))
+                        {
+                            htable[c] = c;
+//                            richTextBox1.AppendText( c.ToString() );
+                            showTotalChar( ++TotalCharCount );
+                        }
+                    }
+                    long pos = inFile.BaseStream.Position;
+                    int progress = (int)(((float)pos / (float)inFileLength) * 100.0f);
+                    worker.ReportProgress(progress);
+                }
+                inFile.Close();
             }
-            outputResult(textBox1.Text);
         }
 
+        private void bWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            this.ProgressBar1.Value = e.ProgressPercentage;
+        }
+
+        private void bWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            setProgressBar(0);
+            outputResult(this.textBox1.Text);
+        }
     }
 }
