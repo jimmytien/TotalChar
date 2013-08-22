@@ -1,0 +1,564 @@
+MinoOyaji(Clone)       Rope
+MinoOyaji(Clone)       Body
+WinCamera       MinoOyaji(Clone)
+ShopItemBuild(Clone)       SelectButton
+Base       Title
+Base       Num
+Base       buyButton
+Possession       Base
+ShopItemBuild(Clone)       Possession
+Name       Text
+Name       DetailButton
+ShopItemBuild(Clone)       Name
+ShopItemBuild(Clone)       icon
+Resource       Title
+Resource1       smallIcon
+Resource1       Panel
+Resource1       Cost
+Resource       Resource1
+ShopItemBuild(Clone)       Resource
+ShopItemBuild(Clone)       Brief
+ShopItemBuild(Clone)       Base
+ShopWindow(Clone)       ShopItemBuild(Clone)
+ShopItemBuild(Clone)       SelectButton
+Base       Title
+Base       Num
+Base       buyButton
+Possession       Base
+ShopItemBuild(Clone)       Possession
+Name       Text
+Name       DetailButton
+ShopItemBuild(Clone)       Name
+ShopItemBuild(Clone)       icon
+Resource       Title
+Resource1       smallIcon
+Resource1       Panel
+Resource1       Cost
+Resource       Resource1
+ShopItemBuild(Clone)       Resource
+ShopItemBuild(Clone)       Brief
+ShopItemBuild(Clone)       Base
+ShopWindow(Clone)       ShopItemBuild(Clone)
+ShopItemBuild(Clone)       SelectButton
+Base       Title
+Base       Num
+Base       buyButton
+Possession       Base
+ShopItemBuild(Clone)       Possession
+Name       Text
+Name       DetailButton
+ShopItemBuild(Clone)       Name
+ShopItemBuild(Clone)       icon
+Resource       Title
+Resource1       smallIcon
+Resource1       Panel
+Resource1       Cost
+Resource       Resource1
+ShopItemBuild(Clone)       Resource
+ShopItemBuild(Clone)       Brief
+ShopItemBuild(Clone)       Base
+ShopWindow(Clone)       ShopItemBuild(Clone)
+ShopItemBuild(Clone)       SelectButton
+Base       Title
+Base       Num
+Base       buyButton
+Possession       Base
+ShopItemBuild(Clone)       Possession
+Name       Text
+Name       DetailButton
+Name       attention
+ShopItemBuild(Clone)       Name
+ShopItemBuild(Clone)       icon
+Resource       Title
+Resource1       smallIcon
+Resource1       Panel
+Resource1       Cost
+Resource       Resource1
+ShopItemBuild(Clone)       Resource
+ShopItemBuild(Clone)       Brief
+ShopItemBuild(Clone)       Base
+ShopWindow(Clone)       ShopItemBuild(Clone)
+ShopItemBuild(Clone)       SelectButton
+Base       Title
+Base       Num
+Base       buyButton
+Possession       Base
+ShopItemBuild(Clone)       Possession
+Name       Text
+Name       DetailButton
+Name       attention
+ShopItemBuild(Clone)       Name
+ShopItemBuild(Clone)       icon
+Resource       Title
+Resource1       smallIcon
+Resource1       Panel
+Resource1       Cost
+Resource       Resource1
+ShopItemBuild(Clone)       Resource
+ShopItemBuild(Clone)       Brief
+ShopItemBuild(Clone)       Base
+ShopWindow(Clone)       ShopItemBuild(Clone)
+ShopItemBuild(Clone)       SelectButton
+Base       Title
+Base       Num
+Base       buyButton
+Possession       Base
+ShopItemBuild(Clone)       Possession
+Name       Text
+Name       DetailButton
+Name       attention
+ShopItemBuild(Clone)       Name
+ShopItemBuild(Clone)       icon
+Resource       Title
+Resource1       smallIcon
+Resource1       Panel
+Resource1       Cost
+Resource       Resource1
+ShopItemBuild(Clone)       Resource
+ShopItemBuild(Clone)       Brief
+ShopItemBuild(Clone)       Base
+ShopWindow(Clone)       ShopItemBuild(Clone)
+ShopItemBuild(Clone)       SelectButton
+Base       Title
+Base       Num
+Base       buyButton
+Possession       Base
+ShopItemBuild(Clone)       Possession
+Name       Text
+Name       DetailButton
+Name       attention
+ShopItemBuild(Clone)       Name
+ShopItemBuild(Clone)       icon
+Resource       Title
+Resource1       smallIcon
+Resource1       Panel
+Resource1       Cost
+Resource       Resource1
+ShopItemBuild(Clone)       Resource
+ShopItemBuild(Clone)       Brief
+ShopItemBuild(Clone)       Base
+ShopWindow(Clone)       ShopItemBuild(Clone)
+ShopItemBuild(Clone)       SelectButton
+Base       Title
+Base       Num
+Base       buyButton
+Possession       Base
+ShopItemBuild(Clone)       Possession
+Name       Text
+Name       DetailButton
+ShopItemBuild(Clone)       Name
+ShopItemBuild(Clone)       icon
+Resource       Title
+Resource1       smallIcon
+Resource1       Panel
+Resource1       Cost
+Resource       Resource1
+ShopItemBuild(Clone)       Resource
+ShopItemBuild(Clone)       Brief
+ShopItemBuild(Clone)       Base
+ShopWindow(Clone)       ShopItemBuild(Clone)
+ShopItemPopup(Clone)       base
+03_buildingSize       value
+03_buildingSize       key
+03_buildingSize       arrow
+ShopItemPopup(Clone)       03_buildingSize
+resource       smallIcon
+resource       Panel
+sai       resource
+sai       key
+sai       arrow
+02_product       sai
+ShopItemPopup(Clone)       02_product
+sais       value
+resource       smallIcon
+resource       Panel
+sais       resource
+sais       key
+sais       arrow
+01_cost       sais
+ShopItemPopup(Clone)       01_cost
+ShopItemBuild(Clone)       ShopItemPopup(Clone)
+ShopItemBuild(Clone)       SelectButton
+Base       Title
+Base       Num
+Base       buyButton
+Possession       Base
+ShopItemBuild(Clone)       Possession
+Name       Text
+Name       DetailButton
+ShopItemBuild(Clone)       Name
+ShopItemBuild(Clone)       icon
+Resource       Title
+Resource1       smallIcon
+Resource1       Panel
+Resource1       Cost
+Resource       Resource1
+ShopItemBuild(Clone)       Resource
+ShopItemBuild(Clone)       Brief
+ShopItemBuild(Clone)       BaseWaku
+ShopItemBuild(Clone)       Base
+ShopWindow(Clone)       ShopItemBuild(Clone)
+ShopItemBuild(Clone)       SelectButton
+Base       Title
+Base       Num
+Base       buyButton
+Possession       Base
+ShopItemBuild(Clone)       Possession
+Name       Text
+Name       DetailButton
+ShopItemBuild(Clone)       Name
+ShopItemBuild(Clone)       icon
+Resource       Title
+Resource1       smallIcon
+Resource1       Panel
+Resource1       Cost
+Resource       Resource1
+ShopItemBuild(Clone)       Resource
+ShopItemBuild(Clone)       Brief
+ShopItemBuild(Clone)       Base
+ShopWindow(Clone)       ShopItemBuild(Clone)
+ServiceLocatorRoot       PoliticItemInventory
+ServiceLocatorRoot       BuildingDrafts
+ServiceLocatorRoot       PageController
+WindowMaskPanel(Clone)       Button
+WinCamera       WindowMaskPanel(Clone)
+ShopWindow(Clone)       PanelRecommended
+ShopWindow(Clone)       header
+ShopWindow(Clone)       CloseButton
+ShopWindow(Clone)       body
+Page       TopPageButton
+Page       PrevPageButton
+Page       NextPageButton
+Page       font
+Page       BottomPageButton
+ShopWindow(Clone)       Page
+ShopWindow(Clone)       Title
+Recommend       Title
+Recommend       Base
+Recommend       Header
+Recommend       desc
+ShopWindow(Clone)       Recommend
+ShopWindow(Clone)       base
+ShopWindow(Clone)       Panel
+Sort       01_normal
+01_Draft       Sort
+Classify       Select
+Classify       06_FamousPlace
+Classify       05_Decoration
+Classify       04_Friend
+Classify       03_Tactics
+Classify       02_CastleTown
+01_Draft       Classify
+Category       01_Draft
+04_Etc       Sort
+04_Etc       Classify
+Category       04_Etc
+03_Support       button
+Category       03_Support
+05_Bushou       Sort
+05_Bushou       Classify
+Category       05_Bushou
+Category       Select
+02_PaidDraft       Sort
+02_PaidDraft       Classify
+Category       02_PaidDraft
+06_NationalPower       button
+Category       06_NationalPower
+ShopWindow(Clone)       Category
+ShopWindow(Clone)       BuildingCount
+WinCamera       ShopWindow(Clone)
+WindowMaskPanel(Clone)       Button
+UICamera       WindowMaskPanel(Clone)
+building200_004_01_01_1_1(Clone)       modifier
+building200_004_01_01_1_1(Clone)       building200_004_01_01_1_1
+x:9 y:24       building200_004_01_01_1_1(Clone)
+building200_051_01_01_1_1(Clone)       modifier
+building200_051_01_01_1_1(Clone)       building100_001_01_01_1_1
+x:8 y:16       building200_051_01_01_1_1(Clone)
+building200_051_01_01_1_1(Clone)       modifier
+building200_051_01_01_1_1(Clone)       building100_001_01_01_1_1
+x:8 y:15       building200_051_01_01_1_1(Clone)
+building200_051_01_01_1_1(Clone)       modifier
+building200_051_01_01_1_1(Clone)       building100_001_01_01_1_1
+x:12 y:19       building200_051_01_01_1_1(Clone)
+building200_041_01_01_1_1(Clone)       modifier
+building200_041_01_01_1_1(Clone)       building060_002_01_01_1_1
+x:17 y:6       building200_041_01_01_1_1(Clone)
+building200_051_01_01_1_1(Clone)       modifier
+building200_051_01_01_1_1(Clone)       building100_001_01_01_1_1
+x:11 y:19       building200_051_01_01_1_1(Clone)
+building200_051_01_01_1_1(Clone)       modifier
+building200_051_01_01_1_1(Clone)       building100_001_01_01_1_1
+x:11 y:18       building200_051_01_01_1_1(Clone)
+building200_051_01_01_1_1(Clone)       modifier
+building200_051_01_01_1_1(Clone)       building100_001_01_01_1_1
+x:11 y:17       building200_051_01_01_1_1(Clone)
+building200_039_01_01_1_1(Clone)       modifier
+building200_039_01_01_1_1(Clone)       building200_039_01_01_1_1
+x:1 y:11       building200_039_01_01_1_1(Clone)
+building200_051_01_01_1_1(Clone)       modifier
+building200_051_01_01_1_1(Clone)       building100_001_01_01_1_1
+x:7 y:15       building200_051_01_01_1_1(Clone)
+building200_051_01_01_1_1(Clone)       modifier
+building200_051_01_01_1_1(Clone)       building100_001_01_01_1_1
+x:7 y:14       building200_051_01_01_1_1(Clone)
+building200_041_01_01_1_1(Clone)       modifier
+building200_041_01_01_1_1(Clone)       building060_002_01_01_1_1
+x:22 y:9       building200_041_01_01_1_1(Clone)
+building200_051_01_01_1_1(Clone)       modifier
+building200_051_01_01_1_1(Clone)       building100_001_01_01_1_1
+x:13 y:20       building200_051_01_01_1_1(Clone)
+building200_041_01_01_1_1(Clone)       modifier
+building200_041_01_01_1_1(Clone)       building060_002_01_01_1_1
+x:19 y:21       building200_041_01_01_1_1(Clone)
+building200_051_01_01_1_1(Clone)       modifier
+building200_051_01_01_1_1(Clone)       building100_001_01_01_1_1
+x:10 y:17       building200_051_01_01_1_1(Clone)
+building200_051_01_01_1_1(Clone)       modifier
+building200_051_01_01_1_1(Clone)       building100_001_01_01_1_1
+x:10 y:16       building200_051_01_01_1_1(Clone)
+building200_051_01_01_1_1(Clone)       modifier
+building200_051_01_01_1_1(Clone)       building100_001_01_01_1_1
+x:9 y:16       building200_051_01_01_1_1(Clone)
+building200_051_01_01_1_1(Clone)       modifier
+building200_051_01_01_1_1(Clone)       building100_001_01_01_1_1
+x:13 y:19       building200_051_01_01_1_1(Clone)
+building200_041_01_01_1_1(Clone)       modifier
+building200_041_01_01_1_1(Clone)       building060_002_01_01_1_1
+x:13 y:15       building200_041_01_01_1_1(Clone)
+building200_041_01_01_1_1(Clone)       modifier
+building200_041_01_01_1_1(Clone)       building060_002_01_01_1_1
+x:13 y:12       building200_041_01_01_1_1(Clone)
+building200_041_01_01_1_1(Clone)       modifier
+building200_041_01_01_1_1(Clone)       building060_002_01_01_1_1
+x:16 y:18       building200_041_01_01_1_1(Clone)
+building200_041_01_01_1_1(Clone)       modifier
+building200_041_01_01_1_1(Clone)       building060_002_01_01_1_1
+x:12 y:6       building200_041_01_01_1_1(Clone)
+building200_039_01_01_1_1(Clone)       modifier
+building200_039_01_01_1_1(Clone)       building200_039_01_01_1_1
+x:1 y:9       building200_039_01_01_1_1(Clone)
+building200_041_01_01_1_1(Clone)       modifier
+building200_041_01_01_1_1(Clone)       building060_002_01_01_1_1
+x:16 y:10       building200_041_01_01_1_1(Clone)
+building200_041_01_01_1_1(Clone)       modifier
+building200_041_01_01_1_1(Clone)       building060_002_01_01_1_1
+x:9 y:12       building200_041_01_01_1_1(Clone)
+building200_041_01_01_1_1(Clone)       modifier
+building200_041_01_01_1_1(Clone)       building060_002_01_01_1_1
+x:20 y:14       building200_041_01_01_1_1(Clone)
+building200_041_01_01_1_1(Clone)       modifier
+building200_041_01_01_1_1(Clone)       building060_002_01_01_1_1
+x:23 y:13       building200_041_01_01_1_1(Clone)
+building200_039_01_01_1_1(Clone)       modifier
+building200_039_01_01_1_1(Clone)       building200_039_01_01_1_1
+x:19 y:17       building200_039_01_01_1_1(Clone)
+building200_051_01_01_1_1(Clone)       modifier
+building200_051_01_01_1_1(Clone)       building100_001_01_01_1_1
+x:14 y:20       building200_051_01_01_1_1(Clone)
+building200_036_01_01_1_1(Clone)       modifier
+building200_036_01_01_1_1(Clone)       building080_003_01_01_1_1
+x:6 y:19       building200_036_01_01_1_1(Clone)
+building200_013_01_01_1_1(Clone)       modifier
+building200_013_01_01_1_1(Clone)       building200_013_01_01_1_1
+x:2 y:19       building200_013_01_01_1_1(Clone)
+building200_040_01_01_1_1(Clone)       modifier
+building200_040_01_01_1_1(Clone)       building200_040_01_01_1_1
+x:9 y:3       building200_040_01_01_1_1(Clone)
+building200_040_01_01_1_1(Clone)       modifier
+building200_040_01_01_1_1(Clone)       building200_040_01_01_1_1
+x:11 y:3       building200_040_01_01_1_1(Clone)
+building200_040_01_01_1_1(Clone)       modifier
+building200_040_01_01_1_1(Clone)       building200_040_01_01_1_1
+x:18 y:4       building200_040_01_01_1_1(Clone)
+po_mission_00456       IconNew(Clone)
+po_mission_00113       IconNew(Clone)
+po_mission_00082       IconNew(Clone)
+po_mission_00067       IconNew(Clone)
+MissionIconBase       po_mission_00456
+MissionIconBase       po_mission_00067
+MissionIconBase       po_mission_00113
+MissionIconBase       po_mission_00082
+building200_002_01_01_1_1(Clone)       modifier
+building200_002_01_01_1_1(Clone)       building010_003_01_01_1_1
+x:7 y:7       building200_002_01_01_1_1(Clone)
+MissionIconBase       MissionBtnNext(Clone)
+MissionIconBase       MissionBtnPrev(Clone)
+pbm36_01_2(Clone)       sky@uv
+pbm36_01_2(Clone)       sky
+pbm36_01_2(Clone)       distant_view
+bgMap       pbm36_01_2(Clone)
+pbm36_01_1(Clone)       wood_02
+pbm36_01_1(Clone)       wood_01
+pbm36_01_1(Clone)       foreground
+bgMap       pbm36_01_1(Clone)
+PoliticPeopleManager       people_009(Clone)
+PoliticPeopleManager       people_002(Clone)
+ServiceLocatorRoot       TimerUpdater
+PoliticBuildingList       x:12 y:19
+x:17 y:6       buildingIcon(Clone)
+PoliticBuildingList       x:17 y:6
+PoliticBuildingList       x:11 y:19
+PoliticBuildingList       x:11 y:18
+PoliticBuildingList       x:11 y:17
+x:9 y:3       buildingIcon(Clone)
+PoliticBuildingList       x:9 y:3
+x:1 y:11       buildingIcon(Clone)
+PoliticBuildingList       x:1 y:11
+PoliticBuildingList       x:7 y:15
+PoliticBuildingList       x:7 y:14
+x:22 y:9       buildingIcon(Clone)
+PoliticBuildingList       x:22 y:9
+PoliticBuildingList       x:13 y:20
+PoliticBuildingList       x:9 y:24
+x:19 y:21       buildingIcon(Clone)
+PoliticBuildingList       x:19 y:21
+PoliticBuildingList       x:10 y:17
+PoliticBuildingList       x:10 y:16
+x:11 y:3       buildingIcon(Clone)
+PoliticBuildingList       x:11 y:3
+PoliticBuildingList       x:9 y:16
+PoliticBuildingList       x:13 y:19
+x:13 y:15       buildingIcon(Clone)
+PoliticBuildingList       x:13 y:15
+x:6 y:19       buildingIcon(Clone)
+PoliticBuildingList       x:6 y:19
+x:13 y:12       buildingIcon(Clone)
+PoliticBuildingList       x:13 y:12
+x:16 y:18       buildingIcon(Clone)
+PoliticBuildingList       x:16 y:18
+x:12 y:6       buildingIcon(Clone)
+PoliticBuildingList       x:12 y:6
+x:1 y:9       buildingIcon(Clone)
+PoliticBuildingList       x:1 y:9
+x:16 y:10       buildingIcon(Clone)
+PoliticBuildingList       x:16 y:10
+x:9 y:12       buildingIcon(Clone)
+PoliticBuildingList       x:9 y:12
+x:18 y:4       buildingIcon(Clone)
+PoliticBuildingList       x:18 y:4
+x:7 y:7       buildingIcon(Clone)
+PoliticBuildingList       x:7 y:7
+PoliticBuildingList       x:2 y:19
+x:20 y:14       buildingIcon(Clone)
+PoliticBuildingList       x:20 y:14
+x:23 y:13       buildingIcon(Clone)
+PoliticBuildingList       x:23 y:13
+x:19 y:17       buildingIcon(Clone)
+PoliticBuildingList       x:19 y:17
+PoliticBuildingList       x:8 y:16
+PoliticBuildingList       x:8 y:15
+PoliticBuildingList       x:14 y:20
+MapCamera       ColorFilter
+font14       maxObject(Clone)
+font14       maxObject(Clone)
+font14       maxObject(Clone)
+ExpBar       ExpBar - Empty Bar
+ExpBar       ExpBar - Empty Bar
+ExpBar       ExpBar - Empty Bar
+ExpBar       ExpBar - Empty Bar
+ExpBar       ExpBar - Empty Bar
+ExpBar       ExpBar - Empty Bar
+ExpBar       ExpBar - Empty Bar
+ExpBar       ExpBar - Empty Bar
+ResourceTargetParent       ResourceType[]ResourceTarget
+ResourceTargetParent       ResourceType[]ResourceTarget
+ResourceTargetParent       ResourceType[]ResourceTarget
+ResourceTargetParent       ResourceType[]ResourceTarget
+ResourceTargetParent       ResourceType[]ResourceTarget
+ResourceTargetParent       ResourceType[]ResourceTarget
+ResourceTargetParent       ResourceType[]ResourceTarget
+ResourceTargetParent       ResourceType[]ResourceTarget
+ResourceTargetParent       ResourceType[]ResourceTarget
+UICamera       ResourceTargetParent
+exp       exp - Empty Bar
+WaitingIcon       WaitingIcon - Empty Bar
+MapCamera       PoliticMapFade
+WindowMaskColor(Clone)       Fade
+WinCamera       WindowMaskColor(Clone)
+ServiceLocatorRoot       WindowController
+ChatInfo       toWeb
+ChatCamera       ChatInfo
+Chat       sendButton
+Chat       selecting
+Chat       logMoveUp
+Chat       logMoveDown
+Chat       logCountChange
+Chat       logCollider
+ChatCamera       Chat
+ServiceLocatorRoot       ChatCamera
+OptionMenus       voice
+OptionMenus       bgm
+OptionMenus       se
+OptionMenus       help
+openAndClose       close
+openAndClose       open
+OptionMenus       openAndClose
+fullscreen       off
+fullscreen       on
+OptionMenus       fullscreen
+GlobalCamera       OptionMenus
+userNameBase       userNameText
+username       userNameBase
+username       lv
+username       kokudaka
+username       stone
+username       level
+username       exp
+UserStatus       username
+GlobalCamera       UserStatus
+ExpBar       expBase
+woodText14       ExpBar
+wood       woodText14
+wood       resourceSymbol
+Resources       wood
+iron       resourceSymbol
+ExpBar       expBase
+ironText14       ExpBar
+iron       ironText14
+Resources       iron
+gold       resourceSymbol
+ExpBar       expBase
+goldText14       ExpBar
+gold       goldText14
+Resources       gold
+food       resourceSymbol
+ExpBar       expBase
+foodText14       ExpBar
+food       foodText14
+Resources       food
+coin       resourceSymbol
+ExpBar       expBase
+coinText14       ExpBar
+coin       coinText14
+Resources       coin
+GlobalCamera       Resources
+attentionCharacterBg       font18
+GlobalCamera       attentionCharacterBg
+pp       pointMark
+ExpBar       expBase
+pp       ExpBar
+pp       pp
+FullBack       font14
+pp       FullBack
+actionpoint       pp
+mp       pointMark
+ExpBar       expBase
+mp       ExpBar
+mp       mp
+FullBack       font14
+mp       FullBack
+actionpoint       mp
+bp       pointMark
+FullBack       font14
+bp       FullBack
+ExpBar       expBase
+bp       ExpBar
+bp       bp
+actionpoint       bp
+GlobalCamera       actionpoint
+ServiceLocatorRoot       GlobalCamera
+ServiceLocatorRoot       UserStatusUpdater
+ServiceLocatorRoot       WinCamera
+ServiceLocatorRoot       GloabalObjectRead
+map       PoliticPeopleManager
