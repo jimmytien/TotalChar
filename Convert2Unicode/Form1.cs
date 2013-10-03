@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Convert2Unicode
 {
@@ -45,11 +46,21 @@ namespace Convert2Unicode
 
         private void RunBtn_Click(object sender, EventArgs e)
         {
-            bWorker.RunWorkerAsync();
+            //bWorker.RunWorkerAsync();
+            string filename = textBox1.Text;
+
+            List<string> filelist = new List<string>();
+            if (useDir.Checked)
+            {
+                string[] names = filename.Split('.');
+                filename = names[0];
+            }
+            StreamReader sr = new StreamReader(new FileStream( filename, FileMode.Open));
         }
 
         private void bWorker_DoWork(object sender, DoWorkEventArgs e)
         {
+/*
             InputStreamReader isr = new InputStreamReader(new FileInputStream(infile), "SJIS");
             OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(outfile), "UTF16");
             char[] ca = new char[4096];
@@ -60,6 +71,7 @@ namespace Convert2Unicode
             }
             osw.close();
             isr.close();
+ * */
         }
 
         private void bWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)

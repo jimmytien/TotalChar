@@ -32,11 +32,11 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.srcOpenBtn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.selOutFmt = new System.Windows.Forms.ComboBox();
-            this.RunBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.selOutFmt = new System.Windows.Forms.ComboBox();
+            this.subDir = new System.Windows.Forms.CheckBox();
+            this.useDir = new System.Windows.Forms.CheckBox();
+            this.RunBtn = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.bWorker = new System.ComponentModel.BackgroundWorker();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
@@ -75,33 +75,22 @@
             // 
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.selOutFmt);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
+            this.groupBox1.Controls.Add(this.subDir);
+            this.groupBox1.Controls.Add(this.useDir);
             this.groupBox1.Location = new System.Drawing.Point(14, 40);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(464, 71);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
-            // checkBox1
+            // label2
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(18, 21);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(96, 16);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "檔案所在目錄";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(120, 21);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(60, 16);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "子目錄";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(294, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 12);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "輸出格式";
             // 
             // selOutFmt
             // 
@@ -117,6 +106,26 @@
             this.selOutFmt.Size = new System.Drawing.Size(105, 20);
             this.selOutFmt.TabIndex = 2;
             // 
+            // subDir
+            // 
+            this.subDir.AutoSize = true;
+            this.subDir.Location = new System.Drawing.Point(120, 21);
+            this.subDir.Name = "subDir";
+            this.subDir.Size = new System.Drawing.Size(60, 16);
+            this.subDir.TabIndex = 1;
+            this.subDir.Text = "子目錄";
+            this.subDir.UseVisualStyleBackColor = true;
+            // 
+            // useDir
+            // 
+            this.useDir.AutoSize = true;
+            this.useDir.Location = new System.Drawing.Point(18, 21);
+            this.useDir.Name = "useDir";
+            this.useDir.Size = new System.Drawing.Size(96, 16);
+            this.useDir.TabIndex = 0;
+            this.useDir.Text = "檔案所在目錄";
+            this.useDir.UseVisualStyleBackColor = true;
+            // 
             // RunBtn
             // 
             this.RunBtn.Location = new System.Drawing.Point(403, 279);
@@ -126,15 +135,6 @@
             this.RunBtn.Text = "轉換";
             this.RunBtn.UseVisualStyleBackColor = true;
             this.RunBtn.Click += new System.EventHandler(this.RunBtn_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(294, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 12);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "輸出格式";
             // 
             // richTextBox1
             // 
@@ -184,8 +184,8 @@
         private System.Windows.Forms.Button srcOpenBtn;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox selOutFmt;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox subDir;
+        private System.Windows.Forms.CheckBox useDir;
         private System.Windows.Forms.Button RunBtn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox richTextBox1;
