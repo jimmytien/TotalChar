@@ -42,5 +42,34 @@ namespace Convert2Unicode
         {
             selOutFmt.SelectedIndex = 0;
         }
+
+        private void RunBtn_Click(object sender, EventArgs e)
+        {
+            bWorker.RunWorkerAsync();
+        }
+
+        private void bWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            InputStreamReader isr = new InputStreamReader(new FileInputStream(infile), "SJIS");
+            OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(outfile), "UTF16");
+            char[] ca = new char[4096];
+            int n;
+            while ((n = isr.read(ca)) > 0)
+            {
+                osw.write(ca, 0, n);
+            }
+            osw.close();
+            isr.close();
+        }
+
+        private void bWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+
+        }
+
+        private void bWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+
+        }
     }
 }

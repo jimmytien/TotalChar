@@ -38,6 +38,8 @@
             this.RunBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.bWorker = new System.ComponentModel.BackgroundWorker();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -123,6 +125,7 @@
             this.RunBtn.TabIndex = 4;
             this.RunBtn.Text = "轉換";
             this.RunBtn.UseVisualStyleBackColor = true;
+            this.RunBtn.Click += new System.EventHandler(this.RunBtn_Click);
             // 
             // label2
             // 
@@ -140,6 +143,18 @@
             this.richTextBox1.Size = new System.Drawing.Size(464, 156);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
+            // 
+            // bWorker
+            // 
+            this.bWorker.WorkerReportsProgress = true;
+            this.bWorker.WorkerSupportsCancellation = true;
+            this.bWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bWorker_DoWork);
+            this.bWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.bWorker_ProgressChanged);
+            this.bWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bWorker_RunWorkerCompleted);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Form1
             // 
@@ -174,6 +189,8 @@
         private System.Windows.Forms.Button RunBtn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.ComponentModel.BackgroundWorker bWorker;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
